@@ -1,0 +1,13 @@
+# ストロングパラメーターの書き方（基本構文)
+
+
+
+def list_params
+  params.require(:モデル名).permit(:カラム名１, :カラム名２...)
+end
+
+
+private
+def user_params
+  params.require(:キー(モデル名)).permit(:カラム名１,：カラム名２,・・・).marge(カラム名: 入力データ)
+end
